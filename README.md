@@ -11,7 +11,9 @@ Tezos is an open-source, decentralized blockchain created in 2014 by Arthur and 
 
 
 
+## Diagram
 
+![Overview diagram of Tezos](./images/architecture-overview.png)
 
 
 
