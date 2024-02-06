@@ -17,6 +17,7 @@ You can do lots of things with Tezos, but here are some ideas:
 
 - **Manage tokens**: Tezos manages digital assets called _tokens_.
 Tokens can represent anything that you want them to represent and behave in any way that you program them to behave.
+You can use tokens as game pieces, to represent ownership over real-world items, as
 
 - **Run programs**: Tezos is a platform for deploying programs called _smart contracts_, which behave like APIs.
 You can deploy smart contracts to Tezos and not worry about where they are running, and users can call them from many different clients.
@@ -27,12 +28,21 @@ You can deploy smart contracts to Tezos and not worry about where they are runni
 You can also use Tezos to handle logic and security for games.
 For an example, see the tutorial [Create a mobile game](https://docs.tezos.com/tutorials/mobile).
 
+- **Create organizations**: You can set up digital autonomous organizations (DAOs) to manage online groups, allow voting on issues and proposals, and share and distribute resources.
+
 ## What are tokens and NFTs?
 
 The main cryptocurrency of Tezos is called _tez_, which is sometimes referred to as ꜩ or as XTZ.
 Tezos users use tez to pay transaction fees and as a method of payment and exchange.
 
-Tezos also
+Tezos lets you create your own tokens, including:
+
+- Fungible tokens, which are interchangeable and accounts can own any amount of, like tez
+- Non-fungible tokens (NFTs), which are unique digital assets that can represent ownership of something
+- Stablecoins, which are tied to the price of fiat currencies such as USD and EUR
+- Wrapped tokens, which represent tokens from another blockchain or another standard
+
+For more information and tutorials, see [Tokens](https://docs.tezos.com/architecture/tokens).
 
 ## Diagram
 
