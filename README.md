@@ -15,6 +15,7 @@ For links to complete reference information, see [References](#references).
 - [Using test networks and faucets](#using-test-networks-and-faucets)
 - [Funding a wallet](#funding-a-wallet)
 - [Writing smart contracts](#writing-smart-contracts)
+- [Creating tokens](#creating-tokens)
 - [Getting information about Tezos](#getting-information-about-tezos)
 - [Getting help](#getting-help)
 - [References](#references)
@@ -386,6 +387,13 @@ Archetype is a high-level language designed specifically for writing Tezos smart
 It does not have an online IDE, so you have to install it locally; see https://archetype-lang.org/.
 
 For a walkthrough, see https://docs.tezos.com/tutorials/smart-contract/archetype.
+
+## Creating tokens
+
+Tokens are managed by smart contracts, so the first step to creating tokens is to create a smart contract.
+For example, SmartPy has a toolkit called [FA2 lib](https://smartpy.io/guides/FA2-lib/overview) that provides a standard contract for working with tokens.
+
+There are also several tutorials that deal with NFTs and other kinds of tokens at https://docs.tezos.com/tutorials.
 
 ## Getting information about Tezos
 
