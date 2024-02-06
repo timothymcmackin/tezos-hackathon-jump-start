@@ -372,14 +372,29 @@ For a walkthrough, see https://docs.tezos.com/tutorials/smart-contract/archetype
 
 ## Getting information about Tezos
 
-- RPCs
-- Block explorers
-- Indexers
+- **Block explorers** are applications that provide info about Tezos and allow users to do basic interaction with Tezos, like calling smart contracts.
+[Better Call Dev](https://better-call.dev) and [TzKT](https://tzkt.io/) are popular Tezos block explorers.
+For example, this link shows information about the deployed contract from the tutorial [Build a simple web application](https://docs.tezos.com/tutorials/build-your-first-app): https://better-call.dev/ghostnet/KT1R2LTg3mQoLvHtUjo2xSi7RMBUJ1sJkDiD/operations.
 
+- **Indexers** are applications that retrieve blockchain data, process it, and store it in a way that makes it easier to search and use.
+For example, you can use indexers to get a list of all of the accounts that have called a certain smart contract, or a list of accounts that own a certain token.
 
+  Tezos has public indexers, but you can also set up your own indexer if you want specific information.
+  See [Indexers](https://docs.tezos.com/developing/information/indexers).
 
+  For example, this TzKT query gets an account's balance of the USDT token by passing the address of the account and the address of the contract that manages the token:
 
+  ```
+  https://api.tzkt.io/v1/tokens/balances?token.contract=KT1XnTn74bUtxHfDtBmm2bGZAQfhPbvKWR8o&account=tz1a1RTsGUbads3VucUQDxJF4EDXkDWcDHPK
+  ```
 
+   For information about the TZKT indexer's API, see https://api.tzkt.io.
+
+- **RPCs** are interfaces that nodes provide to share technical information, such as the content of blocks.
+This information is used more by computers than humans.
+For reference information about RPC endpoints, see https://tezos.gitlab.io/shell/rpc.html.
+
+  For example, to get the contents of block number 2, run `octez-client rpc get /chains/main/blocks/2` or `curl -X GET "https://rpc.ghostnet.teztnets.com/chains/main/blocks/2"`
 
 ## Getting help
 
@@ -394,3 +409,7 @@ For more community resources, see https://tezos.com/community.
 - Developer information: https://docs.tezos.com
 - Documentation for the Octez suite, mostly about managing nodes and bakers: https://tezos.gitlab.io/
 - https://opentezos.com
+
+## Tools
+
+TODO
