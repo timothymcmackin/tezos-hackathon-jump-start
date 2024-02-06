@@ -26,7 +26,7 @@ You can deploy smart contracts to Tezos and not worry about where they are runni
 
 - **Run games**: The Tezos SDK for Unity lets you use Tezos as a backend for games, keeping track of players' inventories and allowing them to work with their items in and out of your games.
 You can also use Tezos to handle logic and security for games.
-For an example, see the tutorial [Create a mobile game](https://docs.tezos.com/tutorials/mobile).
+For an example, see the tutorial [Create a mobile game](https://docs.tezos.com/tutorials/mobile) and the [Unity SDK](#the-tezos-sdk-for-unity).
 
 - **Create organizations**: You can set up digital autonomous organizations (DAOs) to manage online groups, allow voting on issues and proposals, and share and distribute resources.
 
