@@ -228,6 +228,8 @@ Smart contracts can't do these things:
 - Change their code, except in specific cases (see [Lambdas](https://docs.tezos.com/smart-contracts/data-types/complex-data-types#lambdas))
 - Catch and respond to errors (see [Handling errors](https://docs.tezos.com/smart-contracts/logic/errors))
 
+For examples of smart contracts, see https://docs.tezos.com/smart-contracts/samples
+
 ### Smart contract languages
 
 You can write Tezos smart contracts in any of these languages:
@@ -441,6 +443,8 @@ For more community resources, see https://tezos.com/community.
 - LIGO docs: https://ligolang.org/docs/intro/introduction
 - SmartPy docs: https://smartpy.io/manual/introduction/overview
 - Archetype docs: https://archetype-lang.org/docs/introduction/
+
+- Sample smart contracts: https://docs.tezos.com/smart-contracts/samples
 
 ## Tools
 
