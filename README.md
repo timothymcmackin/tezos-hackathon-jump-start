@@ -209,7 +209,7 @@ Smart contracts can't do these things:
 
 - Access programs outside the blockchain, including calling external APIs
 - Access other contracts' storage
-- Change their code
+- Change their code, except in specific cases (see [Lambdas](https://docs.tezos.com/smart-contracts/data-types/complex-data-types#lambdas))
 - Catch and respond to errors (see [Handling errors](https://docs.tezos.com/smart-contracts/logic/errors))
 
 ### Smart contract languages
@@ -270,7 +270,10 @@ def test():
     scenario.verify(contract.data.greeting == "Hi, there!")
 ```
 
-You can test, compile, and deploy this contract from the online IDE or use these commands to test, compile, and deploy it locally:
+Try pasting this code into the online IDE at https://smartpy.io/ide and deploying it yourself.
+For a walkthrough, see see https://docs.tezos.com/tutorials/smart-contract.
+
+If you prefer to work directly on your own computer, you can use these commands to test, compile, and deploy the smart contract locally:
 
 ```bash
 ./smartpy test store_greeting.py store_greeting/
@@ -290,6 +293,8 @@ octez-client --wait none transfer 0 from my_account \
   to storeGreeting --entrypoint 'replace' \
   --arg '"Hi there!"' --burn-cap 0.1
 ```
+
+You can also get the address for the contract, which starts with `KT1`, and look it up in a [Block explorer](#getting-information-about-tezos) to see its transactions, tokens, and storage.
 
 #### LIGO
 
@@ -332,7 +337,10 @@ namespace Counter {
 }
 ```
 
-You can test, compile, and deploy this contract from the online IDE or use these commands to test, compile, and deploy it locally:
+Try pasting this code into the online IDE at https://ide.ligolang.org/ and deploying it yourself.
+For a walkthrough, see see https://docs.tezos.com/tutorials/smart-contract.
+
+If you prefer to work directly on your own computer, you can use these commands to test, compile, and deploy the smart contract locally:
 
 ```bash
 ligo run dry-run counter.jsligo -m Counter "Increment(32)" "10"
@@ -353,10 +361,14 @@ octez-client --wait none transfer 0 from my_account \
   --arg '5' --burn-cap 0.1
 ```
 
+You can also get the address for the contract, which starts with `KT1`, and look it up in a [Block explorer](#getting-information-about-tezos) to see its transactions, tokens, and storage.
 
 #### Archetype
 
-TODO
+Archetype is a high-level language designed specifically for writing Tezos smart contracts.
+It does not have an online IDE, so you have to install it locally; see https://archetype-lang.org/.
+
+For a walkthrough, see https://docs.tezos.com/tutorials/smart-contract/archetype.
 
 ## Getting information about Tezos
 
