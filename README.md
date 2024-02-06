@@ -4,7 +4,23 @@ Here's some information to help new developers get started hacking with Tezos.
 This is not a comprehensive reference for all of Tezos; it's just an overview.
 For links to complete reference information, see [References](#references).
 
-## Overview: What is Tezos?
+## Table of contents
+
+- [What is Tezos?](#what-is-tezos)
+- [What can I do with Tezos?](#what-can-i-do-with-tezos)
+- [What are tokens and NFTs?](#what-are-tokens-and-nfts)
+- [Diagram](#diagram)
+- [Decentralized applications (dApps)](#decentralized-applications-dapps)
+- [How do I access Tezos?](#how-do-i-access-tezos)
+- [Using test networks and faucets](#using-test-networks-and-faucets)
+- [Funding a wallet](#funding-a-wallet)
+- [Writing smart contracts](#writing-smart-contracts)
+- [Getting information about Tezos](#getting-information-about-tezos)
+- [Getting help](#getting-help)
+- [References](#references)
+- [Tools](#tools)
+
+## What is Tezos?
 
 Tezos is an open-source, decentralized blockchain created in 2014 by Arthur and Kathleen Breitman.
 It is a decentralized computer system that users can use to store and exchange cryptocurrencies and other tokens and to host decentralized applications.
