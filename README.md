@@ -11,11 +11,58 @@ Tezos is an open-source, decentralized blockchain created in 2014 by Arthur and 
 
 
 
+## What can I do with Tezos?
+
+You can do lots of things with Tezos, but here are some ideas:
+
+- **Manage tokens**: Tezos manages digital assets called _tokens_.
+Tokens can represent anything that you want them to represent and behave in any way that you program them to behave.
+
+- **Run programs**: Tezos is a platform for deploying programs called _smart contracts_, which behave like APIs.
+You can deploy smart contracts to Tezos and not worry about where they are running, and users can call them from many different clients.
+
+- **Accept payments**: Using Tezos to manage online payments is much easier than accepting credit cards because Tezos and wallet applications handle all of the security for you.
+
+- **Run games**: The Tezos SDK for Unity lets you use Tezos as a backend for games, keeping track of players' inventories and allowing them to work with their items in and out of your games.
+You can also use Tezos to handle logic and security for games.
+For an example, see the tutorial [Create a mobile game](https://docs.tezos.com/tutorials/mobile).
+
+## What are tokens and NFTs?
+
+The main cryptocurrency of Tezos is called _tez_, which is sometimes referred to as ꜩ or as XTZ.
+Tezos users use tez to pay transaction fees and as a method of payment and exchange.
+
+Tezos also
+
 ## Diagram
 
+The following diagram shows the major components of Tezos:
+
+- **Nodes**: The backbone of Tezos is a network of computers that run the Tezos protocol.
+Anyone can run a node and no one is directly in charge of the nodes, which makes the system resilient and decentralized.
+
+  The nodes run the Tezos protocol that any user can call or deploy programs called smart contracts to, which makes the system behave like a globally-distributed operating system.
+  Nodes have an [RPC interface](https://docs.tezos.com/architecture/rpc) that allows clients to call them, though not all nodes make their RPC interface public.
+
+  The nodes work closely with **bakers** and **accusers**, which package the transactions that users and other clients send into blocks to go on the blockchain.
+
+- **Blockchain**: The blockchain itself is a record of transactions and other operations that happen on Tezos.
+Aside from metadata, each block contains transactions from users and other clients.
+The main types of transactions that hackathon users are interested in are:
+
+  - Transferring of tez from one account to another
+  - Creating other kinds of tokens
+  - Transferring of other kinds of tokens from one account to another
+  - Deploying smart contracts
+  - Calling smart contracts
+
+  The diagram shows **smart contracts** as part of the blockchain because their code and storage is stored in the blocks.
+
+- **Indexers**: Indexers are applications that retrieve blockchain data, process it, and store it in a way that makes it easier to search and use.
+
+- **Clients**: Many different clients can access Tezos for information, to initiate token transfers, and to call smart contracts.
+
 ![Overview diagram of Tezos](./images/architecture-overview.png)
-
-
 
 ## Decentralized applications (dApps)
 
@@ -101,7 +148,7 @@ The SDK has a quickstart here: https://docs.tezos.com/unity/quickstart
 ## Using test networks and faucets
 
 To avoid working with real cryptocurrency on Tezos Mainnet, you can use the test network named Ghostnet.
-It provides free tez tokens so you can deploy contracts and work with them at no cost.
+Its faucet provides free tez tokens so you can deploy contracts and work with them at no cost.
 
 For information about Ghostnet, see https://teztnets.com/ghostnet-about.
 
@@ -111,6 +158,7 @@ To use test networks, you have to point your client or SDK to an RPC endpoint fo
 RPC nodes are like API servers that you can send Tezos transactions to.
 The [Ghostnet page](https://teztnets.com/ghostnet-about) has a list of public RPC endpoints that you can use.
 
+- The online IDEs for LIGO and SmartPy have settings for Ghostnet.
 - To set the Octez client to use Ghostnet, pass the RPC endpoint that you want to use, as in this example: `octez-client -E https://rpc.ghostnet.teztnets.com config init`
 - To set Taquito to use Ghostnet, create an instance of Taquito with the RPC endpoint, as in this example:
 
@@ -250,6 +298,8 @@ It provides three entrypoints:
 - The `decrement` endpoint accepts an integer as a parameter and subtracts that integer to the value in storage
 - The `reset` endpoint takes no parameters and resets the value in storage to 0
 
+Each entrypoint returns a list of other Tezos transactions to run (in these cases, an empty list) and the updated value of the contract's storage.
+
 ```ts
 namespace Counter {
   type storage = int;
@@ -303,13 +353,6 @@ TODO
 - RPCs
 - Block explorers
 - Indexers
-
-
-## What are some simple things I can do with Tezos?
-
-### Token transfers
-### Decentralized applications
-### Games
 
 
 
