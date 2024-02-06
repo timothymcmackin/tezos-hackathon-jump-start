@@ -17,7 +17,7 @@ You can do lots of things with Tezos, but here are some ideas:
 
 - **Manage tokens**: Tezos manages digital assets called _tokens_.
 Tokens can represent anything that you want them to represent and behave in any way that you program them to behave.
-You can use tokens as game pieces, to represent ownership over real-world items, as
+You can use tokens as game pieces, to represent ownership over real-world items, as indicators of membership in an organization, or to represent quantities of things.
 
 - **Run programs**: Tezos is a platform for deploying programs called _smart contracts_, which behave like APIs.
 You can deploy smart contracts to Tezos and not worry about where they are running, and users can call them from many different clients.
@@ -38,7 +38,7 @@ Tezos users use tez to pay transaction fees and as a method of payment and excha
 Tezos lets you create your own tokens, including:
 
 - Fungible tokens, which are interchangeable and accounts can own any amount of, like tez
-- Non-fungible tokens (NFTs), which are unique digital assets that can represent ownership of something
+- Non-fungible tokens (NFTs), which are unique digital assets that can represent ownership of something specific
 - Stablecoins, which are tied to the price of fiat currencies such as USD and EUR
 - Wrapped tokens, which represent tokens from another blockchain or another standard
 
@@ -146,7 +146,7 @@ For tutorials that use Taquito, see:
 - https://docs.tezos.com/tutorials/build-your-first-app
 - https://docs.tezos.com/tutorials/create-an-nft/nft-web-app
 
-For starter Taquito applications, see https://github.com/trilitech/tutorial-applications
+For starter Taquito applications, see https://github.com/trilitech/tutorial-applications.
 
 ### The Tezos SDK for Unity
 
@@ -163,6 +163,7 @@ Its faucet provides free tez tokens so you can deploy contracts and work with th
 For information about Ghostnet, see https://teztnets.com/ghostnet-about.
 
 The Ghostnet faucet is at https://faucet.ghostnet.teztnets.com.
+You put in your account address and the faucet sends you tez tokens.
 
 To use test networks, you have to point your client or SDK to an RPC endpoint for that network instead of for Tezos Mainnet.
 RPC nodes are like API servers that you can send Tezos transactions to.
@@ -408,8 +409,79 @@ For more community resources, see https://tezos.com/community.
 
 - Developer information: https://docs.tezos.com
 - Documentation for the Octez suite, mostly about managing nodes and bakers: https://tezos.gitlab.io/
-- https://opentezos.com
+- Developer learning series: https://opentezos.com/
+- Applications from Tezos tutorials: https://github.com/trilitech/tutorial-applications
+
+- Documentation for Etherlink, an EVM-compatible environment running on Tezos: https://docs.etherlink.com/
+
+- LIGO docs: https://ligolang.org/docs/intro/introduction
+- SmartPy docs: https://smartpy.io/manual/introduction/overview
+- Archetype docs: https://archetype-lang.org/docs/introduction/
 
 ## Tools
 
-TODO
+Here are some other tools for working with Tezos:
+
+### dApp SDKs
+
+- Taquito SDK for sending transactions to Tezos in JavaScript and Typescript: https://tezostaquito.io
+- Beacon SDK for connecting to Tezos wallets: https://docs.walletbeacon.io/
+- Tezos SDK for the [Unity](https://unity.com/) game platform: https://docs.tezos.com/unity
+
+### Development tools
+
+- Taqueria development platform for Tezos: https://taqueria.io/
+- Full indexers:
+  - [TzKT](https://api.tzkt.io/)
+  - [TzPro](https://docs.tzpro.io/)
+  - [TzIndex](https://github.com/blockwatch-cc/tzindex)
+- Selective indexers:
+  - [Que Pasa](https://github.com/tzConnectBerlin/que-pasa)
+  - [DipDup](https://dipdup.io/)
+  - [Dappetizer](https://dappetizer.dev/)
+- Flextesa sandbox tool: https://tezos.gitlab.io/flextesa/ with more information at https://tezos.gitlab.io/user/sandbox.html
+- Smart contract visualization tool: [VisualTez](https://visualtez.com/editor)
+- Decentralized file storage: https://pinata.cloud/
+
+### VSCode plugins
+
+- [Taqueria](https://marketplace.visualstudio.com/items?itemName=PinnacleLabs.taqueria)
+- [Archetype language](https://marketplace.visualstudio.com/items?itemName=edukera.archetype)
+- [Michelson Syntax](https://marketplace.visualstudio.com/items?itemName=baking-bad.michelson)
+- [Michelson debugger](https://marketplace.visualstudio.com/items?itemName=serokell-io.michelson-debugger)
+- [ligo-vscode](https://marketplace.visualstudio.com/items?itemName=ligolang-publish.ligo-vscode)
+- [LIGO debugger](https://marketplace.visualstudio.com/items?itemName=ligolang-publish.ligo-debugger-vscode)
+
+### Block explorers
+
+- [TzStats](https://tzstats.com/)
+- [TzKT](https://tzkt.io/)
+- [Arronax](https://arronax.io)
+- [Baking Bad](https://baking-bad.org)
+- [Better Call Dev](https://better-call.dev)
+- [Explorus](https://explorus.io/)
+- [Etherlink Explorer](https://explorer.etherlink.com/)
+- [TzFlow](https://tzflow.com/)
+
+### Indexers
+
+- [TzKT](https://api.tzkt.io/)
+- [TzPro](https://docs.tzpro.io/)
+- [TzIndex](https://github.com/blockwatch-cc/tzindex)
+- [Que Pasa](https://github.com/tzConnectBerlin/que-pasa)
+- [DipDup](https://dipdup.io/)
+- [Dappetizer](https://dappetizer.dev/)
+
+### NFT marketplaces
+
+- [objkt.com](https://objkt.com/)
+- [Teia.art](https://teia.art/)
+- [FxHash](https://www.fxhash.xyz/)
+- [DNS.xyz](https://dns.xyz/)
+
+### Sources of RPC nodes
+
+- https://teztnets.com
+- [Community RPC Nodes](https://tezostaquito.io/docs/rpc_nodes) listed by ECAD Labs.
+- [SmartPy nodes](https://smartpy.io/nodes)
+- [RPC nodes](https://tezostaquito.io/docs/rpc_nodes) in the Taquito documentation
