@@ -7,9 +7,7 @@ For links to complete reference information, see [References](#references).
 ## Overview: What is Tezos?
 
 Tezos is an open-source, decentralized blockchain created in 2014 by Arthur and Kathleen Breitman.
-
-
-
+It is a decentralized computer system that users can use to store and exchange cryptocurrencies and other tokens and to host decentralized applications.
 
 ## What can I do with Tezos?
 
@@ -305,6 +303,8 @@ You can use it to write, test, and deploy smart contracts in two basic ways:
 
 - You can use the online IDE at https://ide.ligolang.org/
 - You can write contracts in your own IDE and then use the LIGO command-line tool to test and compile them; see https://ligolang.org/docs/intro/installation?lang=jsligo
+
+JsLIGO cheat sheet: https://gl.githack.com/ligo.suzanne.soy/training-gitpod/raw/master/cheat-sheet-jsligo.html
 
 Here's a simple smart contract in JsLIGO.
 It stores a number and allows callers to change it.
