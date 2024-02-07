@@ -421,13 +421,14 @@ For example, you can use indexers to get a list of all of the accounts that have
 This information is used more by computers than humans.
 For reference information about RPC endpoints, see https://tezos.gitlab.io/shell/rpc.html.
 
-  For example, to get the contents of block number 2, run `octez-client rpc get /chains/main/blocks/2` or `curl -X GET "https://rpc.ghostnet.teztnets.com/chains/main/blocks/2"`
+  For example, to get the contents of block number 2, run `octez-client rpc get /chains/main/blocks/2` or `curl -X GET "https://rpc.ghostnet.teztnets.com/chains/main/blocks/2"`.
 
 ## Getting help
 
-- https://discord.gg/yXaPy6s5Nr
-- https://www.reddit.com/r/tezos
-- https://tezos.stackexchange.com
+- Tezos discord: https://discord.gg/yXaPy6s5Nr
+- Tezos Reddit: https://www.reddit.com/r/tezos
+- Tezos Stack Exchange: https://tezos.stackexchange.com
+- SmartPy Telegram: https://t.me/SmartPy_io
 
 For more community resources, see https://tezos.com/community.
 
@@ -459,14 +460,9 @@ Here are some other tools for working with Tezos:
 ### Development tools
 
 - Taqueria development platform for Tezos: https://taqueria.io/
-- Full indexers:
+- Indexers and block explorers:
   - [TzKT](https://api.tzkt.io/)
-  - [TzPro](https://docs.tzpro.io/)
-  - [TzIndex](https://github.com/blockwatch-cc/tzindex)
-- Selective indexers:
-  - [Que Pasa](https://github.com/tzConnectBerlin/que-pasa)
-  - [DipDup](https://dipdup.io/)
-  - [Dappetizer](https://dappetizer.dev/)
+  - [Better Call Dev](https://better-call.dev)
 - Flextesa sandbox tool: https://tezos.gitlab.io/flextesa/ with more information at https://tezos.gitlab.io/user/sandbox.html
 - Smart contract visualization tool: [VisualTez](https://visualtez.com/editor)
 - Decentralized file storage: https://pinata.cloud/
@@ -479,26 +475,6 @@ Here are some other tools for working with Tezos:
 - [Michelson debugger](https://marketplace.visualstudio.com/items?itemName=serokell-io.michelson-debugger)
 - [ligo-vscode](https://marketplace.visualstudio.com/items?itemName=ligolang-publish.ligo-vscode)
 - [LIGO debugger](https://marketplace.visualstudio.com/items?itemName=ligolang-publish.ligo-debugger-vscode)
-
-### Block explorers
-
-- [TzStats](https://tzstats.com/)
-- [TzKT](https://tzkt.io/)
-- [Arronax](https://arronax.io)
-- [Baking Bad](https://baking-bad.org)
-- [Better Call Dev](https://better-call.dev)
-- [Explorus](https://explorus.io/)
-- [Etherlink Explorer](https://explorer.etherlink.com/)
-- [TzFlow](https://tzflow.com/)
-
-### Indexers
-
-- [TzKT](https://api.tzkt.io/)
-- [TzPro](https://docs.tzpro.io/)
-- [TzIndex](https://github.com/blockwatch-cc/tzindex)
-- [Que Pasa](https://github.com/tzConnectBerlin/que-pasa)
-- [DipDup](https://dipdup.io/)
-- [Dappetizer](https://dappetizer.dev/)
 
 ### NFT marketplaces
 
