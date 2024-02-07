@@ -261,27 +261,33 @@ import smartpy as sp
 @sp.module
 def main():
     class StoreGreeting(sp.Contract):
-        def __init__(self, greeting): # Note the indentation
+        def __init__(self, greeting):
+            # Initialize the storage with a string passed at deployment time
             self.data.greeting = greeting
 
-        @sp.entrypoint # Note the indentation
+        @sp.entrypoint # Entrypoint to replace the string
         def replace(self, params):
             self.data.greeting = params.text
 
-        @sp.entrypoint # Note the indentation
-        def append(self, params):
+        @sp.entrypoint
+        def append(self, params): # Entrypoint to append to the string
             self.data.greeting += params.text
 
+# Automated tests that run on compilation
 @sp.add_test(name = "StoreGreeting")
 def test():
+    # Initialize the test scenario
     scenario = sp.test_scenario(main)
     scenario.h1("StoreGreeting")
 
+    # Initialize the contract and pass the starting value
     contract = main.StoreGreeting("Hello")
     scenario += contract
 
+    # Verify that the value in storage was set correctly
     scenario.verify(contract.data.greeting == "Hello")
 
+    # Test the entrypoints and check the new storage value
     contract.replace(text = "Hi")
     contract.append(text = ", there!")
     scenario.verify(contract.data.greeting == "Hi, there!")
@@ -340,16 +346,23 @@ namespace Counter {
   type returnValue = [list<operation>, storage];
 
   // Increment entrypoint
+  // Accept an int and the current value of the storage as a parameter
+  // Return a list of operations to run next and the new value of the storage
   @entry
   const increment = (delta : int, store : storage) : returnValue =>
     [list([]), store + delta];
 
   // Decrement entrypoint
+  // Accept an int and the current value of the storage as a parameter
+  // Return a list of operations to run next and the new value of the storage
   @entry
   const decrement = (delta : int, store : storage) : returnValue =>
     [list([]), store - delta];
 
   // Reset entrypoint
+  // Accept "unit" to indicate no parameter and the current value of the storage
+  // Return a list of operations to run next and the new value of the storage
+  // Add underscores to parameter names to avoid errors about unused variables
   @entry
   const reset = (_p : unit, _s : storage) : returnValue =>
     [list([]), 0];
