@@ -109,7 +109,7 @@ Here's a diagram of how these parts work together:
 
 The most popular ways to access Tezos are:
 
-- [The Octez client](#the-octez-client)
+- [The Octez command-line client](#the-octez-client)
 - [The Taquito SDK for JavaScript and TypeScript](#the-taquito-sdk-for-javascript-and-typescript)
 - [The Tezos SDK for Unity](#the-tezos-sdk-for-unity)
 
@@ -165,7 +165,7 @@ For starter Taquito applications, see https://github.com/trilitech/tutorial-appl
 
 ### The Tezos SDK for Unity
 
-You can install the SDK for Unity to call Tezos from Unity games, including locally-installed games, mobile apps on Android and iOS, and WebGL-based games on web pages.
+You can install the SDK for the Unity game development platform to call Tezos from Unity games, including locally-installed games, mobile apps on Android and iOS, and WebGL-based games on web pages.
 The SDK allows you to work with Tezos via C# code that backs objects in the Unity editor.
 
 The SDK has a quickstart here: https://docs.tezos.com/unity/quickstart
@@ -430,9 +430,7 @@ For reference information about RPC endpoints, see https://tezos.gitlab.io/shell
 
 ## Getting help
 
-- Tezos discord: https://discord.gg/yXaPy6s5Nr
-- Tezos Reddit: https://www.reddit.com/r/tezos
-- Tezos Stack Exchange: https://tezos.stackexchange.com
+- Tezos Discord: https://discord.gg/yXaPy6s5Nr
 - SmartPy Telegram: https://t.me/SmartPy_io
 
 For more community resources, see https://tezos.com/community.
@@ -440,11 +438,9 @@ For more community resources, see https://tezos.com/community.
 ## References
 
 - Developer information: https://docs.tezos.com
-- Documentation for the Octez suite, mostly about managing nodes and bakers: https://tezos.gitlab.io/
 - Developer learning series: https://opentezos.com/
 - Applications from Tezos tutorials: https://github.com/trilitech/tutorial-applications
-
-- Documentation for Etherlink, an EVM-compatible environment running on Tezos: https://docs.etherlink.com/
+- Documentation for the Octez suite, mostly about managing nodes and bakers: https://tezos.gitlab.io/
 
 - LIGO docs: https://ligolang.org/docs/intro/introduction
 - SmartPy docs: https://smartpy.io/manual/introduction/overview
@@ -473,22 +469,6 @@ Here are some other tools for working with Tezos:
 
 ### VSCode plugins
 
-- [Taqueria](https://marketplace.visualstudio.com/items?itemName=PinnacleLabs.taqueria)
-- [Michelson Syntax](https://marketplace.visualstudio.com/items?itemName=baking-bad.michelson)
-- [Michelson debugger](https://marketplace.visualstudio.com/items?itemName=serokell-io.michelson-debugger)
 - [ligo-vscode](https://marketplace.visualstudio.com/items?itemName=ligolang-publish.ligo-vscode)
 - [LIGO debugger](https://marketplace.visualstudio.com/items?itemName=ligolang-publish.ligo-debugger-vscode)
-
-### NFT marketplaces
-
-- [objkt.com](https://objkt.com/)
-- [Teia.art](https://teia.art/)
-- [FxHash](https://www.fxhash.xyz/)
-- [DNS.xyz](https://dns.xyz/)
-
-### Sources of RPC nodes
-
-- https://teztnets.com
-- [Community RPC Nodes](https://tezostaquito.io/docs/rpc_nodes) listed by ECAD Labs.
-- [SmartPy nodes](https://smartpy.io/nodes)
-- [RPC nodes](https://tezostaquito.io/docs/rpc_nodes) in the Taquito documentation
+- [Taqueria](https://marketplace.visualstudio.com/items?itemName=PinnacleLabs.taqueria)
