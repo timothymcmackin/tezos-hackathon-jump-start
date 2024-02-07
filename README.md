@@ -232,11 +232,10 @@ For examples of smart contracts, see https://docs.tezos.com/smart-contracts/samp
 
 ### Smart contract languages
 
-You can write Tezos smart contracts in any of these languages:
+You can write Tezos smart contracts in these languages:
 
 - SmartPy, which has a syntax similar to Python
 - LIGO, which has versions with syntaxes similar to JavaScript/TypeScript and OCaml
-- Archetype, which is a high-level language developed specifically for Tezos
 
 Each of these languages are eventually compiled to Michelson, the base language for Tezos smart contracts.
 Michelson is a stack-based language and is hard to read, so most people use one of the high-level languages instead.
@@ -383,13 +382,6 @@ octez-client --wait none transfer 0 from my_account \
 
 You can also get the address for the contract, which starts with `KT1`, and look it up in a [Block explorer](#getting-information-about-tezos) to see its transactions, tokens, and storage.
 
-#### Archetype
-
-Archetype is a high-level language designed specifically for writing Tezos smart contracts.
-It does not have an online IDE, so you have to install it locally; see https://archetype-lang.org/.
-
-For a walkthrough, see https://docs.tezos.com/tutorials/smart-contract/archetype.
-
 ## Creating tokens
 
 Tokens are managed by smart contracts, so the first step to creating tokens is to create a smart contract.
@@ -443,7 +435,6 @@ For more community resources, see https://tezos.com/community.
 
 - LIGO docs: https://ligolang.org/docs/intro/introduction
 - SmartPy docs: https://smartpy.io/manual/introduction/overview
-- Archetype docs: https://archetype-lang.org/docs/introduction/
 
 - Sample smart contracts: https://docs.tezos.com/smart-contracts/samples
 
@@ -470,7 +461,6 @@ Here are some other tools for working with Tezos:
 ### VSCode plugins
 
 - [Taqueria](https://marketplace.visualstudio.com/items?itemName=PinnacleLabs.taqueria)
-- [Archetype language](https://marketplace.visualstudio.com/items?itemName=edukera.archetype)
 - [Michelson Syntax](https://marketplace.visualstudio.com/items?itemName=baking-bad.michelson)
 - [Michelson debugger](https://marketplace.visualstudio.com/items?itemName=serokell-io.michelson-debugger)
 - [ligo-vscode](https://marketplace.visualstudio.com/items?itemName=ligolang-publish.ligo-vscode)
