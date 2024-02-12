@@ -8,8 +8,8 @@ For links to complete reference information, see [References](#references).
 
 - [What is Tezos?](#what-is-tezos)
 - [What can I do with Tezos?](#what-can-i-do-with-tezos)
-- [What are tokens and NFTs?](#what-are-tokens-and-nfts)
 - [Diagram](#diagram)
+- [What are tokens and NFTs?](#what-are-tokens-and-nfts)
 - [Decentralized applications (dApps)](#decentralized-applications-dapps)
 - [How do I access Tezos?](#how-do-i-access-tezos)
 - [Using test networks and faucets](#using-test-networks-and-faucets)
@@ -45,20 +45,6 @@ For an example, see the tutorial [Create a mobile game](https://docs.tezos.com/t
 
 - **Create organizations**: You can set up digital autonomous organizations (DAOs) to manage online groups, allow voting on issues and proposals, and share and distribute resources.
 
-## What are tokens and NFTs?
-
-The main cryptocurrency of Tezos is a type of token called _tez_, which is sometimes referred to as ꜩ or as XTZ.
-Tezos users use tez to pay transaction fees and as a method of payment and exchange.
-
-Tezos also lets you create your own tokens, including:
-
-- Fungible tokens, which are interchangeable and accounts can own any amount of, like tez
-- Non-fungible tokens (NFTs), which are unique digital assets that can represent ownership of something specific
-- Stablecoins, which are tied to the price of fiat currencies such as USD and EUR
-- Wrapped tokens, which represent tokens from another blockchain or another standard
-
-For more information and tutorials, see [Tokens](https://docs.tezos.com/architecture/tokens).
-
 ## Diagram
 
 The following diagram shows the major components of Tezos:
@@ -88,6 +74,20 @@ The main types of transactions that hackathon users are interested in are:
 - **Clients**: Many different clients can access Tezos for information, to initiate token transfers, and to call smart contracts.
 
 ![Overview diagram of Tezos](./images/architecture-overview.png)
+
+## What are tokens and NFTs?
+
+The main cryptocurrency of Tezos is a type of token called _tez_, which is sometimes referred to as ꜩ or as XTZ.
+Tezos users use tez to pay transaction fees and as a method of payment and exchange.
+
+Tezos also lets you create your own tokens, including:
+
+- Fungible tokens, which are interchangeable and accounts can own any amount of, like tez
+- Non-fungible tokens (NFTs), which are unique digital assets that can represent ownership of something specific
+- Stablecoins, which are tied to the price of fiat currencies such as USD and EUR
+- Wrapped tokens, which represent tokens from another blockchain or another standard
+
+For more information and tutorials, see [Tokens](https://docs.tezos.com/architecture/tokens).
 
 ## Decentralized applications (dApps)
 
