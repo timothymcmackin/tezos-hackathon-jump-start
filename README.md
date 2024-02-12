@@ -47,10 +47,10 @@ For an example, see the tutorial [Create a mobile game](https://docs.tezos.com/t
 
 ## What are tokens and NFTs?
 
-The main cryptocurrency of Tezos is called _tez_, which is sometimes referred to as ꜩ or as XTZ.
+The main cryptocurrency of Tezos is a type of token called _tez_, which is sometimes referred to as ꜩ or as XTZ.
 Tezos users use tez to pay transaction fees and as a method of payment and exchange.
 
-Tezos lets you create your own tokens, including:
+Tezos also lets you create your own tokens, including:
 
 - Fungible tokens, which are interchangeable and accounts can own any amount of, like tez
 - Non-fungible tokens (NFTs), which are unique digital assets that can represent ownership of something specific
