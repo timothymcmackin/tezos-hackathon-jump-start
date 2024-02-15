@@ -39,11 +39,12 @@ You can use tokens as game pieces, to represent ownership over real-world items,
 
 - **Run programs**: Tezos is a platform for deploying programs called _smart contracts_, which behave like APIs.
 You can deploy smart contracts to Tezos and not worry about where they are running, and users can call them from many different clients.
+These smart contracts can behave as the backend to applications, as APIs, or as a source of immutable, trusted logic.
 
 - **Accept payments**: Using Tezos to manage online payments is much easier than accepting credit cards because Tezos and wallet applications handle all of the security for you.
 
 - **Run games**: The Tezos SDK for Unity lets you use Tezos as a backend for games, keeping track of players' inventories and allowing them to work with their items in and out of your games.
-You can also use Tezos to handle logic and security for games.
+You can also use Tezos to handle logic and security for games, such as encrypting player choices until it's time to reveal them.
 For an example, see the tutorial [Create a mobile game](https://docs.tezos.com/tutorials/mobile) and the [Unity SDK](#the-tezos-sdk-for-unity).
 
 - **Create organizations**: You can set up digital autonomous organizations (DAOs) to manage online groups, allow voting on issues and proposals, and share and distribute resources.
@@ -94,7 +95,7 @@ For more information and tutorials, see [Tokens](https://docs.tezos.com/architec
 
 ## Decentralized applications (dApps)
 
-Applications that use Tezos are called Decentralized applications (dApps) because they run not on only one computer, but on the network of Tezos nodes all around the world.
+Applications that use Tezos are called decentralized applications (dApps) because they run not on only one computer, but on the network of Tezos nodes all around the world.
 This makes them resilient, so you don't have to worry about when, where, or whether your programs will run.
 
 dApps usually have two parts:
@@ -103,6 +104,8 @@ dApps usually have two parts:
 - **Backend**: One or more [smart contracts](./smart-contracts); they are referred to as the _on-chain_ part because they run on Tezos itself
 
 dApps can also have middleware in the form of an [indexer](https://docs.tezos.com/developing/information/indexers) to interpret the backend information and provide it in a more convenient format for the frontend component.
+
+For examples of dApp front ends, see the applications in the https://github.com/trilitech/tutorial-applications repository.
 
 Here's a diagram of how these parts work together:
 
@@ -184,7 +187,7 @@ The Ghostnet faucet is at https://faucet.ghostnet.teztnets.com.
 You put in your account address and the faucet sends you tez tokens.
 
 To use test networks, you have to point your client or SDK to an RPC endpoint for that network instead of for Tezos Mainnet.
-RPC nodes are like API servers that you can send Tezos transactions to.
+RPC nodes are like API servers that you can send Tezos transactions to and retrieve information about Tezos from.
 The [Ghostnet page](https://teztnets.com/ghostnet-about) has a list of public RPC endpoints that you can use.
 
 - The online IDEs for LIGO and SmartPy have settings for Ghostnet.
@@ -206,7 +209,7 @@ For information about getting a wallet, switching it to Ghostnet, and funding it
 
 ## Writing smart contracts
 
-Tezos smart contacts are pieces of code stored on the blockchain.
+Tezos smart contracts are pieces of code stored on the blockchain.
 After they are deployed, they are immutable and cannot be shut down or prevented from running.
 
 A smart contract is composed of three elements:
@@ -251,7 +254,7 @@ For a tutorial that covers writing a basic smart contract in each of these langu
 You can use it to write, test, and deploy smart contracts in two basic ways:
 
 - You can use the online IDE at https://smartpy.io/ide
-- You can write contracts in your own IDE and then use the SmartPy command-line tool to test and compile them; see https://smartpy.io/manual/introduction/installation
+- You can write contracts in your own IDE and then use Python on the command line to test and compile them; see https://smartpy.io/manual/introduction/installation
 
 Here's a simple smart contract in SmartPy.
 It stores a string and allows callers to change that string.
@@ -377,7 +380,7 @@ namespace Counter {
 Try pasting this code into the online IDE at https://ide.ligolang.org/ and deploying it yourself.
 For a walkthrough, see see https://docs.tezos.com/tutorials/smart-contract.
 
-If you prefer to work directly on your own computer, you can use these commands to test, compile, and deploy the smart contract locally:
+If you prefer to work directly on your own computer, you can install LIGO and use these commands to test, compile, and deploy the smart contract:
 
 ```bash
 ligo run dry-run counter.jsligo -m Counter "Increment(32)" "10"
