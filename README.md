@@ -266,6 +266,8 @@ def main():
     class StoreGreeting(sp.Contract):
         def __init__(self, greeting):
             # Initialize the storage with a string passed at deployment time
+            # Cast the greeting parameter to a string
+            sp.cast(greeting, sp.string)
             self.data.greeting = greeting
 
         @sp.entrypoint # Entrypoint to replace the string
@@ -276,11 +278,11 @@ def main():
         def append(self, params): # Entrypoint to append to the string
             self.data.greeting += params.text
 
-# Automated tests that run on compilation
-@sp.add_test(name = "StoreGreeting")
+# Automated tests that run on simulation
+@sp.add_test()
 def test():
     # Initialize the test scenario
-    scenario = sp.test_scenario(main)
+    scenario = sp.test_scenario("Test scenario", main)
     scenario.h1("StoreGreeting")
 
     # Initialize the contract and pass the starting value
@@ -299,12 +301,12 @@ def test():
 Try pasting this code into the online IDE at https://smartpy.io/ide and deploying it yourself.
 For a walkthrough, see see https://docs.tezos.com/tutorials/smart-contract.
 
-If you prefer to work directly on your own computer, you can use these commands to test, compile, and deploy the smart contract locally:
+If you prefer to work directly on your own computer, you can install Python and SmartPy locally and use these commands to test, compile, and deploy the smart contract:
 
 ```bash
-./smartpy test store_greeting.py store_greeting/
+python store_greeting.py
 
-cd store_greeting/StoreGreeting
+cd Test_scenario/
 
 octez-client originate contract storeGreeting \
   transferring 0 from my_account \
