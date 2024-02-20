@@ -8,6 +8,7 @@ For links to complete reference information, see [References](#references).
 
 - [What is Tezos?](#what-is-tezos)
 - [What can I do with Tezos?](#what-can-i-do-with-tezos)
+- [Tutorials](#tutorials)
 - [Diagram](#diagram)
 - [What are tokens and NFTs?](#what-are-tokens-and-nfts)
 - [Decentralized applications (dApps)](#decentralized-applications-dapps)
@@ -48,6 +49,10 @@ You can also use Tezos to handle logic and security for games, such as encryptin
 For an example, see the tutorial [Create a mobile game](https://docs.tezos.com/tutorials/mobile) and the [Unity SDK](#the-tezos-sdk-for-unity).
 
 - **Create organizations**: You can set up digital autonomous organizations (DAOs) to manage online groups, allow voting on issues and proposals, and share and distribute resources.
+
+## Tutorials
+
+You can get started with Tezos by going through the tutorials at https://docs.tezos.com/tutorials.
 
 ## Diagram
 
