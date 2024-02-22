@@ -123,6 +123,7 @@ The most popular ways to access Tezos are:
 - [The Octez command-line client](#the-octez-client)
 - [The Taquito SDK for JavaScript and TypeScript](#the-taquito-sdk-for-javascript-and-typescript)
 - [The Tezos SDK for Unity](#the-tezos-sdk-for-unity)
+- [Block explorers](#getting-information-about-tezos)
 
 ### The Octez client
 
