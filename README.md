@@ -444,7 +444,7 @@ For reference information about RPC endpoints, see https://tezos.gitlab.io/shell
 
 ## Getting help
 
-- For general developer help, use the Tezos Discord: https://discord.gg/yXaPy6s5Nr
+- For general developer help, use the Tezos Discord: https://discord.gg/tezos
 - For LIGO, use the #ligo channel in the Tezos Discord
 - For SmartPy, use Telegram: https://t.me/SmartPy_io
 - For Taquito, use the Tezos Discord or ask the chatbot on https://tezostaquito.io/docs
