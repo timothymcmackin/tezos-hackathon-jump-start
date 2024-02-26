@@ -106,7 +106,7 @@ This makes them resilient, so you don't have to worry about when, where, or whet
 dApps usually have two parts:
 
 - **Frontend**: An ordinary web, desktop, or mobile app; this is referred to as the _off-chain_ part because it runs on ordinary web or application hosting, not on Tezos itself
-- **Backend**: One or more [smart contracts](./smart-contracts); they are referred to as the _on-chain_ part because they run on Tezos itself
+- **Backend**: One or more smart contracts; they are referred to as the _on-chain_ part because they run on Tezos itself
 
 dApps can also have middleware in the form of an [indexer](https://docs.tezos.com/developing/information/indexers) to interpret the backend information and provide it in a more convenient format for the frontend component.
 
@@ -447,7 +447,7 @@ For reference information about RPC endpoints, see https://tezos.gitlab.io/shell
 - For general developer help, use the Tezos Discord: https://discord.gg/tezos
 - For LIGO, use the #ligo channel in the Tezos Discord or the LIGO Telegram: https://t.me/LigoLang
 - For SmartPy, use the #smartpy channel in the Tezos Discord or the SmartPy Telegram: https://t.me/SmartPy_io
-- For Taquito, use the Tezos Discord or ask the chatbot on https://tezostaquito.io/docs
+- For Taquito, use the Tezos Discord or ask the chatbot on https://tezostaquito.io/docs/quick_start
 
 For more community resources, see https://tezos.com/community.
 
