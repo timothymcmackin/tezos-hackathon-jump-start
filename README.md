@@ -12,6 +12,7 @@ For links to complete reference information, see [References](#references).
 - [Diagram](#diagram)
 - [What are tokens and NFTs?](#what-are-tokens-and-nfts)
 - [Decentralized applications (dApps)](#decentralized-applications-dapps)
+- [Starter applications](#starter-applications)
 - [How do I access Tezos?](#how-do-i-access-tezos)
   - [The Octez client](#the-octez-client)
   - [The Taquito SDK for JavaScript and TypeScript](#the-taquito-sdk-for-javascript-and-typescript)
@@ -115,6 +116,14 @@ For examples of dApp front ends, see the applications in the https://github.com/
 Here's a diagram of how these parts work together:
 
 ![Overview diagram of Web and mobile apps calling smart contracts and getting information from indexers](./images/dapp-overview.png)
+
+## Starter applications
+
+For simple starter applications that use the Taquito SDK for JavaScript and TypeScript, see https://github.com/trilitech/tutorial-applications.
+
+To get started with the Tezos SDK for Unity, see https://docs.tezos.com/unity/quickstart.
+
+For example smart contracts, see https://docs.tezos.com/smart-contracts/samples.
 
 ## How do I access Tezos?
 
